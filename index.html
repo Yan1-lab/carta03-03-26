@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi amor</title>
+    <style>
+        /* Estilos generales y fondo */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #fce4ec, #fff3e0);
+            font-family: 'Georgia', serif;
+            color: #5a3a41;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Contenedor de la carta */
+        .carta-container {
+            max-width: 650px;
+            padding: 50px 30px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(255, 182, 193, 0.5);
+            margin-top: 50px;
+            margin-bottom: 0;
+            z-index: 10;
+            text-align: center;
+        }
+
+        /* Animación de aparición suave (fade in) */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 2.5s forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Tipografía y espaciado */
+        p {
+            font-size: 1.25em;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        /* Contenedor de los GIFs */
+        .gif-container { margin: 30px 0; }
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        /* Estilo de los botones */
+        button {
+            background-color: #ff8fab;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 15px 10px;
+            box-shadow: 0 4px 15px rgba(255, 143, 171, 0.5);
+            transition: transform 0.2s, background-color 0.2s;
+            font-family: 'Georgia', serif;
+        }
+        button:hover { background-color: #fb6f92; transform: scale(1.05); }
+
+        /* Efecto de cielo estrellado final */
+        .cielo-estrellado {
+            width: 100%;
+            background: radial-gradient(circle at bottom, #1b2735 0%, #090a0f 100%);
+            color: white;
+            padding: 150px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 80px;
+        }
+        .frase-final {
+            font-size: 3em;
+            font-style: italic;
+            text-shadow: 0 0 20px rgba(255,255,255,0.8);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Estrellas brillantes */
+        .estrella {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: titilar 2s infinite ease-in-out alternate;
+        }
+        @keyframes titilar {
+            from { opacity: 0.2; box-shadow: 0 0 2px white; }
+            to { opacity: 1; box-shadow: 0 0 10px white; }
+        }
+
+        /* Corazones animados flotantes */
+        .corazon {
+            position: fixed;
+            color: #ff4d6d;
+            font-size: 20px;
+            animation: flotar 5s linear infinite;
+            z-index: 1;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        @keyframes flotar {
+            0% { transform: translateY(100vh) scale(0.5) rotate(0deg); opacity: 0.8; }
+            100% { transform: translateY(-10vh) scale(1.2) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carta-container fade-in" style="animation-delay: 0.2s;">
+        
+        <p class="fade-in" style="animation-delay: 1s;">
+            Mi amor,<br><br>
+            Quiero que sepas que te amo más que a nada en este mundo. Eres lo más importante para mí y cada día a tu lado es un regalo que agradezco con todo mi corazón.
+        </p>
+
+        <div class="gif-container fade-in" style="animation-delay: 2s;">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTY0dHU3dDZzbDF3ZHU1Z2FmYmI1c3FiMnhwMDRwbXBpNGU4NGxnOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1JmGiBtqTuehfYxuy9/giphy.gif">
+        </div>
+
+        <p class="fade-in" style="animation-delay: 3s;">
+            Sé que no siempre estamos de acuerdo en todo, pero también sé algo más fuerte que cualquier discusión: nos amamos. Y cuando dos personas se aman de verdad, siempre encuentran la forma de solucionar todo. Siempre volvemos el uno al otro, porque nuestro amor es más grande que cualquier problema.
+        </p>
+
+        <div class="gif-container fade-in" style="animation-delay: 4s;">
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXAxcHF3azRzNjZtOWZ5eDF2dW8xcGNrbnR1OXlqdGR1YmhhNzM5byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26BRv0ThflsHCqDrG/giphy.webp" alt="Corazones latiendo" style="max-width: 60%;">
+        </div>
+
+        <p class="fade-in" style="animation-delay: 5s;">
+            Estoy profundamente feliz de estar contigo. Me haces sentir completo, me haces reír, me haces crecer. No cambiaría lo que tenemos por nada. Y deseo con todo mi corazón que sigamos caminando juntos, que esto que sentimos sea para siempre.
+        </p>
+
+        <p class="fade-in" style="animation-delay: 6s;">
+            Gracias por ser tú. Gracias por amarme. Gracias por elegirnos.
+        </p>
+
+        <p class="fade-in" style="animation-delay: 7s; font-weight: bold; font-size: 1.4em; color: #d81159;">
+            Te amo hoy, mañana y siempre.
+        </p>
+
+        <hr style="border: 1px solid #ffb3c6; margin: 40px 0;" class="fade-in" style="animation-delay: 7.5s;">
+
+        <div class="fade-in" style="animation-delay: 8s;">
+            
+            <audio id="cancionFondo" loop>
+                <source src="perfect.mp3" type="audio/mpeg">
+            </audio>
+
+            <button onclick="reproducirMusica()" id="btnMusica">🎵 Presiona aquí y escucha nuestra canción</button>
+            <br>
+            <button onclick="lluviaDeCorazones()">Te amo 💕</button>
+        </div>
+    </div>
+
+    <div class="cielo-estrellado">
+        <div class="frase-final">Siempre tú y yo ✨</div>
+        <div id="estrellas-container"></div>
+    </div>
+
+    <script>
+        // 1. Funcionalidad de la Música
+        function reproducirMusica() {
+            var audio = document.getElementById("cancionFondo");
+            var btn = document.getElementById("btnMusica");
+            audio.volume = 0.25; // Volumen suave
+            
+            if (audio.paused) {
+                audio.play();
+                btn.innerHTML = "⏸️ Pausar nuestra canción";
+            } else {
+                audio.pause();
+                btn.innerHTML = "🎵 Presiona aquí y escucha nuestra canción";
+            }
+        }
+
+        // 2. Funcionalidad del Botón "Te amo" (Lluvia de corazones)
+        function lluviaDeCorazones() {
+            for (let i = 0; i < 40; i++) {
+                setTimeout(crearCorazon, i * 40);
+            }
+        }
+
+        // 3. Crear corazones flotantes
+        function crearCorazon() {
+            const corazon = document.createElement('div');
+            corazon.classList.add('corazon');
+            // Aleatorizar si es un corazón rojo, rosa o destello
+            const emojis = ['❤️', '💖', '💕', '✨'];
+            corazon.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+            
+            corazon.style.left = Math.random() * 100 + 'vw';
+            corazon.style.animationDuration = Math.random() * 3 + 3 + 's'; // Entre 3 y 6 segundos
+            document.body.appendChild(corazon);
+
+            setTimeout(() => {
+                corazon.remove();
+            }, 6000); // Limpiar para que no se sature la memoria
+        }
+
+        // Corazones de fondo constantes
+        setInterval(crearCorazon, 700);
+
+        // 4. Crear estrellas para el cielo estrellado
+        const estrellasContainer = document.getElementById('estrellas-container');
+        for (let i = 0; i < 100; i++) {
+            let estrella = document.createElement('div');
+            estrella.classList.add('estrella');
+            estrella.style.width = Math.random() * 3 + 'px';
+            estrella.style.height = estrella.style.width;
+            estrella.style.left = Math.random() * 100 + '%';
+            estrella.style.top = Math.random() * 100 + '%';
+            estrella.style.animationDuration = Math.random() * 1.5 + 0.5 + 's';
+            estrellasContainer.appendChild(estrella);
+        }
+    </script>
+</body>
+</html>
